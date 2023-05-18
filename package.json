@@ -44,7 +44,7 @@
     "test": "test"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/d4ndel1on/cdk-constructs"
