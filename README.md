@@ -1,12 +1,33 @@
-# Welcome to your CDK TypeScript Construct Library project
+# CDK constructs
 
-You should explore the contents of this project. It demonstrates a CDK Construct Library that includes a construct (`Constructs`)
-which contains an Amazon SQS queue that is subscribed to an Amazon SNS topic.
+Convenience constructs included in this project:
 
-The construct defines an interface (`ConstructsProps`) to configure the visibility timeout of the queue.
+* ApiGatewayServedLambda
+* HostedReactApp
 
-## Useful commands
+## Usage
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
+### ApiGatewayServedLambda
+
+Includes following components:
+* `HttpApi` to deliver endpoint
+* `NodejsFunction` containing logic
+* `Table` in case of parameters added
+
+```typescript
+new ApiGatewayServedLambda(stack, 'ApiGatwayServedLambda', {
+  lambda: {
+    entry: path.join(__dirname, 'handler.ts')
+  }
+})
+```
+
+### HostedReactApp
+
+Includes following components:
+* `Bucket` to host the react app
+* `Distribution` to serve the react app
+
+```typescript
+new HostedReactApp(stack, 'HostedReactApp')
+```
