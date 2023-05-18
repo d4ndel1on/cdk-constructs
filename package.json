@@ -6,7 +6,9 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "test": "jest"
+    "test": "jest",
+    "release:patch": "npm-release patch",
+    "release:minor": "npm-release minor"
   },
   "devDependencies": {
     "@types/jest": "^29.5.1",
