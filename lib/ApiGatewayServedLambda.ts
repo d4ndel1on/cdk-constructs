@@ -63,6 +63,10 @@ export class ApiGatewayServedLambda extends Construct {
       entry: path.join(__dirname, '../src/api.ts'),
       logRetention: RetentionDays.ONE_WEEK,
       handler: 'handler',
+      bundling: {
+        minify: true,
+        externalModules: ['@aws-sdk'],
+      },
       ...lambda,
       environment: {
         TABLE: this.table?.tableName || '',
