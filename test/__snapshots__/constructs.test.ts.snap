@@ -224,7 +224,7 @@ exports[`ApiGatewayServedLambda should match snapshot 1`] = `
           "S3Bucket": {
             "Fn::Sub": "cdk-hnb659fds-assets-\${AWS::AccountId}-\${AWS::Region}",
           },
-          "S3Key": "b36210762cc288990e845576fd86a290ba456007f5088a6863257207e851c1db.zip",
+          "S3Key": "41521a392f5a09293abd1db249ed130de1b749387cafe63d86ccc93e6f2f37f2.zip",
         },
         "Environment": {
           "Variables": {
@@ -685,7 +685,7 @@ exports[`ApiGatewayServedLambda should match snapshot with dynamodb 1`] = `
           "S3Bucket": {
             "Fn::Sub": "cdk-hnb659fds-assets-\${AWS::AccountId}-\${AWS::Region}",
           },
-          "S3Key": "b36210762cc288990e845576fd86a290ba456007f5088a6863257207e851c1db.zip",
+          "S3Key": "41521a392f5a09293abd1db249ed130de1b749387cafe63d86ccc93e6f2f37f2.zip",
         },
         "Environment": {
           "Variables": {
