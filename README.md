@@ -31,3 +31,9 @@ Includes following components:
 ```typescript
 new HostedReactApp(stack, 'HostedReactApp')
 ```
+
+## Release
+
+Use command `npm run patch` or `npm run minor`
+
+Tags will be automatically published to npmjs
