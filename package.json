@@ -1,6 +1,6 @@
 {
   "name": "@d4ndel1on/cdk-constructs",
-  "version": "0.2.14",
+  "version": "0.2.15",
   "module": "dist/index.esm.js",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
