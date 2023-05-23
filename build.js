@@ -7,11 +7,18 @@ const shared = {
     bundle: true,
     external: Object.keys(dependencies).concat(Object.keys(peerDependencies)),
     platform: 'node',
+    minify: true,
 }
 
 build({
     ...shared,
     outfile: 'dist/index.js',
+})
+
+build({
+    ...shared,
+    outfile: 'dist/index.esm.js',
+    format: 'esm',
 })
 
 
