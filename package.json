@@ -42,7 +42,8 @@
   "description": "This project contains some convenience constructs for cdk projects",
   "directories": {
     "lib": "lib",
-    "test": "test"
+    "test": "test",
+    "dist": "dist"
   },
   "author": "",
   "license": "MIT",
