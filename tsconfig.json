@@ -9,6 +9,7 @@
     "declaration": true,
     "strict": true,
     "noImplicitAny": true,
+    "outDir": "dist",
     "strictNullChecks": true,
     "noImplicitThis": true,
     "alwaysStrict": true,
@@ -23,8 +24,11 @@
     "typeRoots": [
       "./node_modules/@types"
     ],
-    "esModuleInterop": true,
+    "esModuleInterop": true
   },
+  "include": [
+    "lib"
+  ],
   "exclude": [
     "node_modules",
     "cdk.out"

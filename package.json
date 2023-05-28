@@ -1,11 +1,10 @@
 {
   "name": "@d4ndel1on/cdk-constructs",
   "version": "0.2.18",
-  "module": "dist/index.esm.js",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "build": "node build.js",
+    "prepublish": "tsc",
     "test": "jest",
     "patch": "npm version patch && git push origin main --tags",
     "minor": "npm version minor && git push origin main --tags"
