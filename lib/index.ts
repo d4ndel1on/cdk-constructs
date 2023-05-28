@@ -4,7 +4,7 @@ import {HostedReactApp} from "./HostedReactApp";
 export * from './HostedReactApp'
 export * from './ApiGatewayServedLambda'
 
-export default {
+export {
   HostedReactApp,
   ApiGatewayServedLambda,
 }
